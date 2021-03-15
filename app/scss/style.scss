@@ -1,0 +1,19 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+body{
+    background-color: skyblue;
+}
+.test{
+    font-size: 25px;
+    color: black;
+}
+.box{
+    display: flex;
+    transition: all .3s;
+}
