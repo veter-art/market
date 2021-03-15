@@ -1,24 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
-    
-    <div class="test">
-        Внимание
-        происходит набор текста
-        в прямом эфире
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate blanditiis sed quisquam magni architecto odio eligendi! Earum ratione dolorum, sit explicabo sint repudiandae, ad reprehenderit dolor omnis placeat iusto dignissimos!
-        Libero quos iusto laudantium placeat ipsa incidunt ullam animi eveniet enim natus, ducimus modi laboriosam deleniti ab fugit ea quis sed, non omnis est repudiandae. Iste numquam eveniet amet dolor.
-        Laudantium placeat quidem cum magni explicabo necessitatibus quis sit sunt officia quos, quae ipsam assumenda, quibusdam dicta quasi accusantium voluptatibus fugiat quam minima enim rem iste facere provident? Velit, at!
+
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+
+
+                <div class="header__top-inner">
+                    <div class="header__logo">
+                        <a href="#">
+                            <img src="images/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="header__box">
+                        <a href="" class="header__btn header__btn-invite">Become a Seller</a>
+                        <a href="" class="header__btn header__btn-login">Login</a>
+                        <a href="" class="header__btn header__btn-register">Register</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- end of header__top  -->
+        <div class="container">
+            <div class="header__box">
+
+                <div class="header__menu">
+
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li>
+                                <a href="#">
+                                    home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    all products
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    wordpress
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    festures
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    pages
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+
+
+                </div>
+                <!-- end of header__menu  -->
+
+                <div class="header__form">
+                    <form action="">
+                        <input type="text" placeholder="Search product here..." required>
+                        <button type="submit">
+                            <img src="images/icons/search.png" alt="">
+                        </button>
+                    </form>
+                </div>
+                <!-- end of header__form  -->
+
+            </div>
+        </div>
+        <!-- end of header__box  -->
+
+    </header>
+
+    <section class="search" style="background-image: -webkit-linear-gradient( 180deg, rgba(0,48,222, 0.8) 0%, rgba(23,69,237, 0.8) 54%, rgba(46,90,251, 0.8) 100%);background-color: rgb(43, 43, 43);">
         
-    </div>
+        <div class="container">
+            <div class="search__inner">
+                <div class="search__inner-title">
+                    Create Your Own <br>
+                    <span>Digital Product Marketplace</span>
+                </div>
+                <div class="search__inner-text">
+                    MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products
+                </div>
+            </div>
+            <div class="search__box">
+                <a href="#" class="search__btn search__btn-all">View All Products</a>
+                <a href="#" class="search__btn search__btn-popular">Popular Products</a>
+            </div>
+
+            <div class="search__form">
+                <form action="">
+                    <input type="text" placeholder="Search your products..." required>
+                    <select name="category" id="">
+                        <option value="all-categories">All Categories</option>
+                        <option value="" class="wordpress">WordPress</option>
+                    </select>
+                    <button type="submit">Search Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -26,4 +126,5 @@
     <script src="js/libs.min.js"></script>
     <script src="js/main.min.js"></script>
 </body>
+
 </html>
