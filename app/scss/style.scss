@@ -797,7 +797,25 @@
  .follower__inner{
      padding-bottom: 120px;    
  }
-
+// end follower-slider
+//start stats
+.stats{
+    height: 350px;
+    background-color: #212225;
+    color: #fff;
+}
+.stats__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.stats__item{
+    font-size: 35px;
+    span{
+        font-size: 15px;
+    }
+}
+// end stats 
 
 
   
