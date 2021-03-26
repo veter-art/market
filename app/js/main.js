@@ -22,6 +22,12 @@ $(function(){
 
      var mixer = mixitup('.product__inner-box');
 
+     $('.follower__inner').slick({
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 3,
+     });
+
      
     //  $(".product__rate-star").rateYo({
  

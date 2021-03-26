@@ -600,6 +600,7 @@
     }
     &-img-box{
         position: relative;
+        height: 230px;
     }
     &-links{
         display: flex;
@@ -784,9 +785,20 @@
 }
 
 //end products
+ //start follower
+ .follower-slider{
+    background-color: #eff1f5;
+    padding-top: 120px;
+ }
+ .follower__title{
+     margin-bottom: 50px;
+     margin-top: 50px;
+ }
+ .follower__inner{
+     padding-bottom: 120px;    
+ }
 
 
 
   
 
-// end slider 
