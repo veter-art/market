@@ -814,6 +814,7 @@
     height: 350px;
     background-color: #212225;
     color: #fff;
+    padding-top: 100px;
 }
 .stats__inner{
     display: flex;
@@ -821,12 +822,38 @@
     align-items: center;
 }
 .stats__item{
-    font-size: 35px;
-    span{
-        font-size: 15px;
+    // font-size: 36px;
+    
+    &-picture{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 36px;
+
+        span{
+            margin-bottom: 50px;
+            font-size: 48px;
+        }
+    }
+    &-text{
+        font-size: 18px;
+        margin-top: 20px;
+        color: #fff;
+        text-align: center;
     }
 }
-
+.items-for-sale{
+    color:#feb71d;
+}
+.total-sales{
+    color: #58c9e9;
+}
+.customers{
+    color: #77de51;
+}
+.members{
+    color: #ff6a6d;
+}
 
 // end stats 
 
