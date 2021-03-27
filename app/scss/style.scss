@@ -857,6 +857,298 @@
 
 // end stats 
 
+// start choose
+.choose{
+    text-align: center;
+    padding-bottom: 120px;
+
+    &-title{        
+        padding-top: 120px;
+        padding-bottom: 30px;
+        color: #000;
+        font-size: 36px;
+        text-align: center;
+        span{
+            color:$light-blue;
+            }
+    }
+
+    &-text{
+        padding: 0px 235px;
+        margin-bottom: 60px;  
+        line-height: 30px;      
+    }
+}
+.choose__inner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.choose__item{
+    width: 360px;
+    height: 374px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+    position: relative;
+    padding: 56px 30px 10px 30px;
+    margin-bottom: 30px;
+
+    &-number{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        font-size: 48px;
+        color: #5c87f8;
+        opacity: 0.2;
+    }
+
+    &-title{
+        font-size: 24px;
+        display: flex;
+        flex-direction: column;        
+
+        span{
+            font-size: 60px;
+            color: $light-blue;
+            margin-bottom: 52px;
+        }
+    }
+    &-text{
+        line-height: 30px;
+        margin-top: 20px;
+    }
+}
+//end choose
+
+// start invite
+.invite{
+    display: flex;
+    text-align: center;
+}
+.invite__item{
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 560px;
+    color: #fff;
+    padding: 100px 180px 20px 180px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;  
+    
+
+    &-img{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100px;
+        width: 125px;
+        margin: 0px auto;
+        margin-bottom: 50px;
+    }
+    &-title{
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    &-text{
+        line-height: 30px;
+        margin-bottom: 45px;
+    }
+    &-btn{
+        width: 190px;
+        background-color: #fff;
+        margin: 0 auto;
+        padding: 20px 0px;
+        box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+        border-radius: 28px;
+        color: $light-blue;        
+    }
+    .shop-btn{
+        color: $purple;
+    }
+    .shop-img{
+        height: 100px;
+        width: 100px;
+    }
+
+}
 
   
+//end invite
+  
 
+// start feedback
+.feedback{
+    
+    padding-bottom: 120px;
+
+    &-text{
+        padding: 0px 235px;
+        margin-bottom: 60px;  
+        line-height: 30px;
+        text-align: center;     
+    }
+}
+.feedback__inner{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+.feedback__item{
+    display: flex;
+    flex-direction: column;
+    min-height: 320px;
+    max-width: 555px;
+    width: 100%;
+    padding: 50px 40px 10px 40px;
+    box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    position: relative;
+
+    &::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: rgb(6, 116, 236) ;
+        width: 2px;
+        height: 100%;
+    }
+    
+          
+    &-author{
+        display: flex;
+        align-items: center;
+        position: relative;        
+        font-size: 20px;
+        color: #000;
+        margin-right: 15px;
+        margin-bottom: 30px;
+
+        .avatar{
+            width: 80px;
+            height: 80px;
+            // border-radius: 50%;
+            background-position: center;
+            display: inline-block;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-right: 20px;            
+        }
+        &-info{
+            display: flex;
+            flex-direction: column;            
+        }
+        &-profession{
+            margin-top: 10px;
+            font-size: 15px;
+            color: $text-grey;
+        }             
+    }
+
+    &-icon{
+        position: absolute;
+        right: 0;
+        font-size: 60px;
+        color: #e8e8e8;
+    }
+    &-text{
+        line-height: 30px;
+    }
+}
+.feedback-btn{
+    width: 190px;
+    background-color: $light-blue;    
+    padding: 20px 0px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 28px;
+    color: #fff;
+    margin: 0 auto;
+    text-align: center;    
+}
+  
+//end feedback
+// start news
+.news{
+    background-color: #eff1f5;
+    padding-bottom: 120px;
+
+    &-text{
+        padding: 0px 235px;
+        margin-bottom: 60px;  
+        line-height: 30px;
+        text-align: center;     
+    }
+}
+.news__inner{
+    display: flex;
+    justify-content: space-between;
+}
+.news__item{
+    max-width: 361px;
+    min-height: 475px;
+    box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    background-color: #fff;
+
+    &-img{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 230px;
+        width: 361px;
+    }
+    &-content{
+        padding: 30px;
+        border-bottom: 1px solid #ececec;
+    }
+    &-title{
+        color:#000;
+        font-weight: 500;
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    &-text{
+        line-height: 30px;
+        color: $text-grey;
+    }
+    &-footer{
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        padding: 20px 30px;
+        position: relative;
+        span{
+            margin-right: 8px;
+        }
+
+        &::before{
+            content: "";
+            width: 1px;
+            height: 40px;
+            background-color: #ececec;
+            position: absolute;
+            left: 50%;
+        }
+    }
+    &-date{
+        margin-right: 60px;
+        span{
+            color: $light-blue;
+        }
+    }
+}
+//end news
+
+//start support
+.support{
+    display: flex;
+    text-align: center;
+    font-size: 24px !important;
+    
+}
+.support-item{
+    max-width: 560px;
+}
+//end support
