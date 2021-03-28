@@ -1074,6 +1074,10 @@
         line-height: 30px;
     }
 }
+.feedback-button{
+    display: flex;
+    justify-content: center;
+}
 .feedback-btn{
     width: 190px;
     background-color: $light-blue;    
@@ -1081,7 +1085,7 @@
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
     border-radius: 28px;
     color: #fff;
-    margin: 0 auto;
+    
     text-align: center;    
 }
   
@@ -1441,7 +1445,4 @@
         
     }
 }
-
-
-
 //end footer
