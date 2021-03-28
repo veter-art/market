@@ -1,6 +1,6 @@
 @import '_vars';
 @import '_global';
-// @import '_fonts';
+@import '_fonts';
 
 // start header
 .header__top{
@@ -11,6 +11,23 @@
     justify-content: space-between;
     align-items: center;
     height: 100px;   
+}
+.header__logo{
+    
+    font-size: 30px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    color: #000;
+    img{
+        margin-right: 6px;
+        height: 40px;
+        width: 40px;
+    }
+    span{
+        color: $light-blue;
+    }  
 }
 .header__btn{
     
@@ -1143,12 +1160,288 @@
 
 //start support
 .support{
-    display: flex;
+    
     text-align: center;
     font-size: 24px !important;
     
 }
-.support-item{
-    max-width: 560px;
+.support__inner{
+    display: flex;    
+    // justify-content: space-around;
+    position: relative;
+
+    &::before{
+        content: "";
+        width: 2px;
+        height: 100%;
+        background-color: #e8eaf3;
+        position: absolute;
+        left: 50%;
+    }
+    
+    &-item{
+        width: 50%;
+        padding-top: 65px;
+        padding-bottom: 65px;
+        
+    }
+    &-img{
+        height: 120px;
+        width: 150px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;  
+        margin: 0 auto;        
+    }
+    .supp-img{        
+        width: 160px;
+    }
+    &-title{
+        font-size: 24px !important;
+        padding-top: 30px;
+
+    }
+    .item-money{
+        padding-right: 160px;
+    }
+    .item-supp{
+        padding-left: 80px;
+    }
 }
+
 //end support
+
+// start join
+.join{    
+    color: #fff;
+    text-align: center;
+    padding-bottom: 110px;
+    position: relative;
+    
+    &-title{
+        color: #fff;
+    }
+    &-btn{
+        color: $light-blue;
+        margin-top: 50px;
+        padding: 20px 40px;
+        background-color: #fff;
+        border-radius: 48px;
+    }
+}
+// end join
+// start footer
+.footer__content{
+    background-color: #262b30;
+    color: #fff;
+    padding-top: 110px;    
+}
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 126px;
+    
+}
+.footer__logo{
+    
+    font-size: 24px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    
+    img{
+        margin-right: 6px;
+    }
+    &-text{
+        color: #fff;
+    }
+    span{
+        color: $light-blue;
+    }
+}
+.footer__col{
+    max-width: 165px;
+    width: 100%;
+    color:#ababab;
+    font-size: 15px;
+
+    &-info{
+        max-width: 290px;        
+    }
+    &-newsletter{
+        max-width: 380px;
+    }
+    &-title{
+        color: #fff;
+        font-size: 18px;
+        padding-top: 15px;
+    }
+    &-text{
+        margin-top: 30px;
+        margin-bottom: 20px;
+        line-height: 28px;
+    }
+    a{
+        color:#ababab;
+    }
+    ul{
+        margin-top: 35px;
+        li+li{
+            margin-top: 15px;
+        }
+    }
+}
+.footer__info{
+    &-email{
+        line-height: 26px;
+        margin-top: 15px;
+    }
+    &-address{
+        margin-top: 15px;
+        line-height: 26px;
+    }
+    a span{
+        margin-right: 10px;
+    }
+}
+.footer__form{
+    position: relative;
+    margin-bottom: 50px;
+    
+    input{
+        background-color: #fff;
+        border: none;
+        display: block;
+        width: 100%;
+        height: 40px;
+        color:#000;
+        font-size: 14px;
+        padding-left: 25px;
+        padding-right: 120px;
+        border-radius: 20px;
+        &::placeholder{
+            color:#ababab;
+        }
+    }
+    button{
+        background-color: $light-blue;
+        height: 40px;
+        width: 110px;
+        border-radius: 20px;
+        position: absolute;
+        right: -1px;
+        top: 0;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+    }
+}
+.footer__social-links{
+    
+    li{
+        display: inline-block;
+        
+        & + li{
+            margin-left: 12px;
+        }
+    }
+    a{
+        width: 44px;
+        height: 44px;
+        background-color:lightblue;
+        border-radius: 50%;
+    }
+    .facebook{
+        position: relative;
+        background-color: #395799;
+        &::before{
+            content: '\ea90';
+            font-family: 'icomoon';
+            color: #fff;
+            position: absolute;
+            left: 14px;
+            top: 13px;
+        }
+    }
+    .twitter{
+        position: relative;
+        background-color: #19b2f5;
+        &::before{
+            content: '\ea96';
+            font-family: 'icomoon';
+            color: #fff;
+            position: absolute;
+            left: 14px;
+            top: 13px;
+        }
+    }
+    .gog{
+        position: relative;
+        background-color: #f05b44;
+        &::before{
+            content: '\ea88';
+            font-family: 'icomoon';
+            color: #fff;
+            position: absolute;
+            left: 14px;
+            top: 13px;
+        }
+    }
+    .pintest{
+        position: relative;
+        background-color: #9c0c1c;
+        &::before{
+            content: '\ead1';
+            font-family: 'icomoon';
+            color: #fff;
+            position: absolute;
+            left: 14px;
+            top: 13px;
+        }
+    }
+    .in{
+        position: relative;
+        background-color: #0da6be;
+        &::before{
+            content: '\eaca';
+            font-family: 'icomoon';
+            color: #fff;
+            position: absolute;
+            left: 14px;
+            top: 13px;
+        }
+    }
+    .wheel{
+        position: relative;
+        background-color: #ea4c89;
+        &::before{
+            content: '\eaa7';
+            font-family: 'icomoon';
+            color: #fff;
+            position: absolute;
+            left: 14px;
+            top: 13px;
+        }
+    }
+    
+}
+.footer__copy{
+    font-size: 15px;
+    color: #999999;
+    background-color: #192027;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 96px;
+    span{
+        color:#fff;
+    }
+    &-text{
+        
+    }
+}
+
+
+
+//end footer
