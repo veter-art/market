@@ -1,4 +1,5 @@
-$(function(){
+try{
+  $(function(){
 
     $('.products-slider__inner').slick();
 
@@ -9,6 +10,7 @@ $(function(){
       readOnly: true,
       ratedFill: "#ffc000",
       normalFill: "#4a3e1a",
+      // spacing: "10px",
       
      });
      $(".product__rate-star").rateYo({
@@ -17,6 +19,7 @@ $(function(){
       readOnly: true,
       ratedFill: "#ffc000",
       normalFill: "#4a3e1a",
+      spacing: "5px",
       
      });
 
@@ -43,4 +46,46 @@ $(function(){
     // });
 
 
-});
+  });
+}catch(e){}
+//-----------------------
+
+  //----------------------
+try{
+  $(function(){
+
+
+    $(".product__rate-star-list").rateYo({
+      rating: 3.6,
+      starWidth: "17px",
+      readOnly: true,
+      ratedFill: "#ffc000",
+      normalFill: "#4a3e1a",
+      spacing: "5px",
+     });
+
+    $('.js-range-slider').ionRangeSlider({
+      type: "double",
+      min: 0,
+      max: 400,
+      from: 30,
+      to: 600,   
+      prefix: "$",
+    });
+    var mixer = mixitup('.product-page__inner-box');
+
+    $('.icon-list').on('click', function(){
+      $('.product-page__inner-box .product__item').addClass('list');
+      $('.icon-list').addClass('active');
+      $('.icon-grid').removeClass('active');
+    });
+    $('.icon-grid').on('click', function(){
+      $('.product-page__inner-box .product__item').removeClass('list');
+      $('.icon-list').removeClass('active');
+      $('.icon-grid').addClass('active');
+    });
+
+    
+  });
+
+}catch(e){}
