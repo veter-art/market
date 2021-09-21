@@ -305,6 +305,7 @@
 .notification-box {
     .circule-menu__item {
         align-items: flex-start;
+        position: relative;
     }
     .circule-menu__info {
         margin-right: 50px;
@@ -327,6 +328,32 @@
     .circule-menu__product-name {
         color: $light-blue;
     }
+    
+    .icon-bubble {
+        background-color: #f1ecf9;
+        color:#7347c1;
+    }
+    .icon-basket {
+        background-color: #fff0f0;
+        color: #ff6a6c;
+    }
+    .icon-star {
+        background-color: #effaeb;
+        color: #62d03a;
+    }
+}
+.circule-menu__icon {
+    position: absolute;
+    right: 33px;
+    top: 40px;
+    background-color: #e6f1fd;
+    color: $light-blue;
+    width: 33px;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
 }
 
 
@@ -358,6 +385,66 @@
     .number {
         background-color: $light-blue;
     }
+}
+.basket-box {
+    &:hover {
+        .circule-menu {
+            height: 482px;
+            overflow: visible;
+            // padding: 20px 25px;
+            border-top: 1px solid $light-blue;
+            
+            // a {
+            //     padding: 20px 25px;
+            // }
+            
+        }
+    }
+}
+.basket-menu {
+    width: 400px;
+}
+.basket-menu__item {
+    
+    display: flex;
+    padding: 25px;
+    // position: relative;
+
+    .basket-menu__image {
+        min-width: 80px;
+        height: auto;
+        border-radius: 0%;
+    }
+    .circule-menu__name {
+        margin-bottom: 12px;
+        line-height: 22px;
+        font-weight: 700;
+    }
+    .products__item-category {
+        padding: 0;
+    }
+    .circule-menu__good-menage {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        min-height: inherit;
+    }
+    .circule-menu__icon {
+        background-color: #f1ecf9;
+        color: #818c98;
+        position: inherit;
+        margin: 0 auto;
+        margin-bottom: 12px;
+    }
+}
+.good-manage__price {
+    width: 50px;
+    line-height: 30px;
+    background-color: #e6f1fd;
+    color: $light-blue;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 15px;
 }
 // .notification-menu,
 // .message-menu,
